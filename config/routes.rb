@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-  get 'posts/index'
-  resources :murmurs do
+  resources :posts do
     collection do
       post :confirm
     end
