@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_action :select_post, only: [:edit, :update]
+  before_action :select_post, only: [:edit, :update, :destroy]
   def index
     @posts = Post.all
   end
@@ -40,6 +40,11 @@ class PostsController < ApplicationController
         render :edit
       end
     end
+  end
+
+  def destroy
+    @post.destroy
+    redirect_to posts_path, notice: 'つぶやきを削除しました'
   end
 
   private
