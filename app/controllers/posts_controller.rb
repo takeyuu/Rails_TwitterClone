@@ -1,5 +1,8 @@
 class PostsController < ApplicationController
   before_action :select_post, only: [:edit, :update, :destroy]
+  def top
+  end
+  
   def index
     @posts = Post.all
   end

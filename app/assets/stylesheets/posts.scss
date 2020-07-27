@@ -1,3 +1,181 @@
-// Place all the styles related to the posts controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+html {
+  font-size: 16px;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-color: #d3f5eb;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+input[type="text"],
+textarea {
+    width: 300px;
+    height: 150px
+}
+
+.header {
+  background-color: #37ada6;
+  height: 60px;
+  font-size: 1.5rem;
+}
+
+.menu-link {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.menu-link:hover {
+  color: #718582;
+}
+
+.header-logo {
+  float: left;
+  margin-top: 0;
+  line-height: 10px;
+  margin-left: 10px;
+}
+
+.header-menu {
+  margin: 0;
+  line-height: 15px;
+}
+
+.header-menu p {
+  font-size: 1.3rem;
+}
+
+.header-menu li {
+  float: right;
+  margin-right: 15px;
+  color: #fff;
+}
+
+.main {
+  width: 100%;
+  height: 500px;
+  background-color: #f5f8fa;
+}
+
+.top_main {
+  width: 100%;
+  max-height: 50%;
+  padding: 200px 0 100px;
+  background-image: url("massage-1790063_1280.jpg");
+  background-size: cover;
+  background-position: center 50%;
+  text-align: center;
+  position: absolute;
+  color: #37ada6;
+}
+
+.top_message {
+  position: relative;
+}
+
+.top_main h2{
+  font-size: 4rem;
+}
+
+.top_main p {
+  font-size: 2.5rem;
+}
+
+.container {
+  max-width: 500px;
+  max-height: 100%;
+  margin: 60px auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container h2 {
+  padding-top: 15px;
+}
+
+.error_explanation {
+  color: red;
+}
+
+.form {
+  text-align: center;
+}
+
+.murmur_form {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+table td {
+  overflow-wrap: break-word;
+  padding-bottom: 5px;
+}
+
+.left {
+  width: 80%;
+  padding-right: 20px;
+}
+
+.right {
+  width: 10%;
+}
+
+.new_murmur {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.form_link {
+  text-decoration: none;
+  color: #37ada6;
+}
+
+.form_link:hover {
+  color: #394849;
+}
+
+.btn {
+  display: inline-block;
+  margin-bottom: 20px;
+  background-color: #37ada6;
+  border-radius: 5%;
+  font-size: 1.2rem;
+  padding: 5px 8px;
+  cursor: pointer;
+  color: #fff;
+  border-style: none;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.footer {
+  background-color: #37ada6;
+  height: 60px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer p {
+  text-align: center;
+  color: #fff;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}

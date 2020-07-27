@@ -1,6 +1,12 @@
-<%= form_with(model: @post, local: true, url: confirm_new_or_edit, method: confirm_form_method) do |f| %>
-  <%= f.hidden_field :content %>
-  <p>内容：<%= @post.content %></p>
-  <%= f.submit 'つぶやく' %>
-  <%= f.submit '戻る', name: 'back' %>
-<% end %>
+<div class="main container">
+  <h2>この内容でつぶやきますか？</h2>
+  <div class="form">
+    <%= form_with(model: @post, local: true, url: confirm_new_or_edit, method: confirm_form_method) do |f| %>
+      <div class="murmur_form">
+        <%= f.text_area :content, readonly: true %>
+      </div>
+      <%= f.submit 'つぶやく', class: "btn" %>
+      <%= f.submit '戻る', name: 'back', class: "btn" %>
+    <% end %>
+  </div>
+</div>

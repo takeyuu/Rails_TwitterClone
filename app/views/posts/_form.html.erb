@@ -1,16 +1,18 @@
+<div class="form">
 <%= form_with(model: @post, local:true, url: choose_new_or_edit) do |f| %>
   <% if @post.errors.any? %>
     <div class="error_explanation">
       <ul>
         <% @post.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
+          <li>エラー！<%= message %></li>
         <% end %>
       </ul>
     </div>
   <% end %>
-  <div class="murmur_content">
+  <div class="murmur_form">
     <%= f.text_area :content %>
   </div>
-  <%= f.submit 'つぶやく'%>
+  <%= f.submit 'つぶやく', class: "btn"%>
 <% end %>
-<%= link_to 'つぶやき一覧に戻る', posts_path %>
+<%= link_to 'つぶやき一覧に戻る', posts_path, class: "form_link" %>
+</div>

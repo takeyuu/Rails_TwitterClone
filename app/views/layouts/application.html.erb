@@ -10,6 +10,30 @@
   </head>
 
   <body>
+    <header class="header clearfix">
+      <nav>
+        <div class="header-logo clearfix">
+          <%= link_to "/", class: "menu-link" do %>
+            <p>Murmur</p>
+          <% end %>
+        </div>
+        <ul class="header-menu clearfix">
+          <li>
+            <%= link_to posts_path, class: "menu-link" do %>
+              <p>つぶやき一覧</p>
+            <% end %>
+          </li>
+          <li>
+            <%= link_to new_post_path, class: "menu-link" do %>
+              <p>新規投稿</p>
+            <% end %>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <%= yield %>
+    <footer class="footer">
+      <p>Murmurでつぶやこう！</p>
+    </footer>
   </body>
 </html>
