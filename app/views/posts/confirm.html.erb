@@ -1,0 +1,6 @@
+<%= form_with(model: @post, local: true) do |f| %>
+  <%= f.hidden_field :content %>
+  <p>内容：<%= @post.content %></p>
+  <%= f.submit 'つぶやく' %>
+  <%= f.submit '戻る', name: 'back' %>
+<% end %>
